@@ -81,6 +81,21 @@ class _HomeState extends State<Home> {
                     color: Colors.white,
                   ),
                 ),
+                const SizedBox(height: 40),
+                // Add "My Todo List" link here
+                TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/forms');
+                  },
+                  child: Text(
+                    'My Todo List',
+                    style: TextStyle(
+                      color: Colors.amber[400],
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
